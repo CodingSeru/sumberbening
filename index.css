@@ -1,0 +1,499 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .NavigationBar {
+    width: 90%;
+    padding: 17px 5%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+  }
+  .Logo {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  .ElementsNavigationLinkGroup {
+    display: flex;
+    gap: 40px;
+  }
+  .NavigationLink {
+    color: #141718;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .NavigationLink:hover {
+    color: #007bff;
+  }
+  #nav-bar {
+    display: none;
+  }
+  .slider-section {
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    position: relative;
+    overflow: hidden;
+  }
+  .slider-background {
+    width: 100%;
+    height: 521px;
+    object-fit: cover;
+    transform: translateY(6px);
+  }
+  .slider-content {
+    position: absolute;
+    top: 50%;
+    left: 108px;
+    transform: translateY(-50%);
+    max-width: 600px;
+  }
+  #slider-title {
+    color: white;
+    font-size: 64px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  #slider-description {
+    color: #FEFEFE;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 28px;
+    animation-delay: 0.5s;
+  }
+  .cta-button {
+    padding: 12px 56px;
+    background: #A2D1F6;
+    border-radius: 8px;
+    display: inline-block;
+    border: none;
+    color: #141718;
+    font-size: 18px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    animation-delay: 1s;
+  }
+  .cta-button:hover {
+    background-color: #7fbef2;
+  }
+  .product-image-container {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    border-top-left-radius: 100%;
+    overflow: hidden;
+  }
+  .product-image {
+    width: 80%; 
+    height: auto;
+    bottom: 0;
+    left: 0;
+    padding: 20%;
+  }
+  .tentang {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 60px;
+    box-sizing: border-box;
+  }
+  .imgtentang {
+    width: 50%;
+    height: auto;
+    max-width: 560px;
+  }
+  .h2tentang {
+    color: #007bff;
+    margin-bottom: 16px;
+    font-size: 40px;
+  }
+  .text-tentangcontainer {
+    padding-left: 72px;
+    overflow-x: auto;
+  }
+  .text-tentang {
+    width: 452px;
+    font-size: 21px;
+    margin-bottom: 30px;
+  }
+  .btn-tentang {
+    text-decoration: none;
+    color: #141718;
+  }
+  .h2-produk {
+    text-align: center;
+    color: #007bff;
+    font-size: 40px;
+  }
+  .container-produk {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .cardproduk-1 {
+    width: 48%;
+    height: auto;
+    background-color: #d3d3d3;
+    padding: 10px;
+  }
+  .cardproduk-1 img {
+    width: 100%;
+    height: auto;
+  }
+  .cardproduk-23 {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .cardproduk-2, .cardproduk-3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #d3d3d3;
+    padding: 10px;
+  }
+  .cardproduk-2 img, .cardproduk-3 img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .cardproduk-2 img {
+    width: 35%; 
+    margin: 0 auto 10px;
+  }
+  .text-lemineral, .text-cleo {
+    width: 100%;
+  }
+  .hubungi h2 {
+    color: #007bff;
+    font-size: 40px;
+    text-align: center;
+    padding: 40px 0;
+  }
+  .container-hubungi {
+    width: 100%;
+    max-width: 1121px;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  .card-hubungi {
+    width: 28%;
+    text-align: center;
+    padding: 20px;
+    background-color: #d3d3d3;
+  }
+  .card-hubungi h3 {
+    color: rgb(73, 73, 73);
+    font-size: 16px;
+  }
+  .card-hubungi p {
+    font-size: 14px;
+  }
+  footer {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background-color: #141718;
+    color: #FEFEFE;
+    padding: 32px 40px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    box-sizing: border-box;
+  }
+  .footer1 {
+    width: 35%;
+    height: auto;
+  }
+  .footer1 h3 {
+    font-weight: 600;
+  }
+  .footer1 p{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .footer2 {
+    width: 20%;
+    height: auto;
+  }
+  .footer2 ul {
+    padding: 0;
+    margin: 0;
+  }
+  .footer2 ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  .footer2 ul li a {
+    text-decoration: none;
+    color: #FEFEFE;
+    font-size: 12px;
+  }
+  .footer3 {
+    width: 20%;
+    height: none;
+  }
+  .footer3 p {
+    font-size: 12px;
+  }
+
+  .tentang-hal1 {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    padding: 40px;
+    overflow-x: auto;
+  }
+  .tentang-hal1 img {
+    width: auto;
+    max-width: 100%;
+    height: 350px;
+    margin-right: 72px;
+    margin-bottom: 20px;
+  }
+  .text-hal1 {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+  .phal1 {
+    padding-right: 10%;
+  }
+  .tentang-hal1, .tentang-hal2 p {
+    font-size: 18px;
+    padding-right: 10%;
+  }
+  .tentang-hal1 h2 {
+    color: #007bff;
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+  .tentang-hal2 {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    padding: 40px;
+    justify-content: space-around;
+    overflow-x: auto;
+  }
+  .tentang-hal2 .text-hal1 h2 {
+    color: #007bff;
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .NavigationBar {
+      width: 100%;
+      box-sizing: border-box;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    #nav-bar {
+      display: block;
+      font-size: 20px;
+      border: none;
+      background-color: transparent;
+    }
+    .product-image-container {
+      display: none;
+    }
+    #sideNav {
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 50%;
+      height: 100vh;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      padding-top: 60px;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+      text-align: center;
+    }
+    
+    #sideNav.open {
+      transform: translateX(0);
+    }
+    
+    .NavigationLink {
+      padding: 15px;
+      text-decoration: none;
+      color: black;
+      border-bottom: 1px solid #eee;
+    }
+    
+    #nav-bar {
+      z-index: 1000;
+    }
+
+    .slider-content {
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 90%;
+    }
+
+    #slider-title {
+      font-size: 36px;
+    }
+
+    .slider-description {
+      font-size: 16px;
+    }
+
+    .product-image-container {
+      display: none;
+    }
+
+    .tentang {
+      flex-direction: column;
+      height: auto;
+      padding: 30px;
+    }
+
+    .imgtentang {
+      width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+    }
+
+    .text-tentangcontainer {
+      padding-left: 0;
+    }
+
+    .text-tentang {
+      width: 100%;
+    }
+    .h2tentang {
+      font-size: 30px;
+    }
+    .text-tentang {
+      font-size: 14px;
+    }
+    .btn-tentang {
+      font-size: 16px;
+    }
+    .h2-produk {
+      font-size: 35px;
+    }
+    .container-produk {
+      flex-direction: column;
+    }
+
+    .cardproduk-1, .cardproduk-23 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .cardproduk-2, .cardproduk-3 {
+      display: flex;
+      flex-direction: column;
+    }
+    .cardproduk-2, .cardproduk-3 {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .cardproduk-2 img, .cardproduk-3 img {
+      width: 100%;
+      height: auto;
+      order: -1;
+      margin-bottom: 10px;
+    }
+  
+    .cardproduk-2 img {
+      width: 50%; 
+      margin: 0 auto 10px;
+    }
+  
+    .text-lemineral, .text-cleo {
+      width: 100%;
+    }
+    .hubungi h2 {
+      font-size: 35px;
+    }
+    .container-hubungi {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .card-hubungi {
+      width: 90vw;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      flex-direction: column;
+    }
+
+    .footer1, .footer2, .footer3 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    /* Untuk tentang.html */
+    .tentang-hal1 {
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .tentang-hal1 img {
+      width: 100%;
+      height: auto;
+      margin-right: 0;
+    }
+
+    .tentang-hal2 {
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .text-hal1 {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+    .tentang-hal1 p {
+      font-size: 14px;
+    }
+    .tentang-hal1 h2 {
+      font-size: 30px;
+    }
+    .tentang-hal2 p {
+      font-size: 14px;
+    }
+    .tentang-hal2 .text-hal1 h2 {
+      font-size: 30px;
+    }
+  }
