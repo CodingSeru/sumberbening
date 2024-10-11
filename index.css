@@ -152,6 +152,13 @@ html {
     display: flex;
     justify-content: space-between;
   }
+  .cardproduk-1:hover, .cardproduk-2:hover, .cardproduk-3:hover {
+    transform: scale(1.05);
+  }
+  .cardproduk-1, .cardproduk-2, .cardproduk-3 {
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+  }
   .cardproduk-1 {
     width: 48%;
     height: auto;
@@ -178,12 +185,12 @@ html {
     padding: 10px;
   }
   .cardproduk-2 img, .cardproduk-3 img {
-    width: 50%;
+    width: 60%;
     height: auto;
     margin-bottom: 10px;
   }
   .cardproduk-2 img {
-    width: 35%; 
+    width: 40%; 
     margin: 0 auto 10px;
   }
   .text-lemineral, .text-cleo {
