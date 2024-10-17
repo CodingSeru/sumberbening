@@ -153,6 +153,14 @@ html {
     display: flex;
     justify-content: space-between;
   }
+  .container-produk a {
+    border-bottom: 1px solid black; /* Menambahkan garis hitam di bawah teks */
+    transition: 0.5s ease; /* Menambahkan transisi untuk efek hover */
+  }
+  .container-produk a:hover {
+    border-color: #007bff;
+    color: #007bff; /* Mengubah warna garis bawah saat hover */
+  }
   .cardproduk-1:hover, .cardproduk-2:hover, .cardproduk-3:hover {
     transform: scale(1.05);
   }
@@ -161,17 +169,17 @@ html {
     transition: transform 0.3s ease-in-out;
   }
   .cardproduk-1 {
-    width: 48%;
+    width: 47%;
     height: auto;
     background-color: #d3d3d3;
-    padding: 10px;
+    padding: 20px;
   }
   .cardproduk-1 img {
     width: 100%;
     height: auto;
   }
   .cardproduk-23 {
-    width: 48%;
+    width: 47%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -183,7 +191,7 @@ html {
     justify-content: space-between;
     margin-bottom: 20px;
     background-color: #d3d3d3;
-    padding: 10px;
+    padding: 20px;
   }
   .cardproduk-2 img, .cardproduk-3 img {
     width: 60%;
