@@ -166,12 +166,12 @@ html {
   }
   .cardproduk-1, .cardproduk-2, .cardproduk-3 {
     border-radius: 4px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     transition: transform 0.3s ease-in-out;
   }
   .cardproduk-1 {
     width: 47%;
     height: auto;
-    background-color: #d3d3d3;
     padding: 20px;
   }
   .cardproduk-1 img {
@@ -190,7 +190,6 @@ html {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    background-color: #d3d3d3;
     padding: 20px;
   }
   .cardproduk-2 img, .cardproduk-3 img {
@@ -223,7 +222,7 @@ html {
     width: 28%;
     text-align: center;
     padding: 20px;
-    background-color: #d3d3d3;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   }
   .card-hubungi h3 {
     color: rgb(73, 73, 73);
