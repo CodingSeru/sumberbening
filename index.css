@@ -373,6 +373,9 @@ html {
     #nav-bar {
       z-index: 1000;
     }
+    .slider-background {
+      height: 100vh;
+    }
     .slider-section {
       min-height: 100vh;
     }
