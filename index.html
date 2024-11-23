@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
+  <div class="container-load" id="loader-container"><div class="loader"></div></div>
   <nav class="NavigationBar" id="Rumah">
     <div class="Logo">SUMBER BENING</div>
     <button class="fa-solid fa-bars" id="nav-bar" onclick="opennav()"></button>
@@ -23,11 +24,11 @@
   <div class="slider-section">
     <img class="slider-background" src="img/mountains-4292912_1920.webp" alt="Background Image"/>
     <div class="slider-content">
-      <h1 class="animate__animated animate__fadeInLeft" id="slider-title">Depot Air Minum & Isi Ulang SUMBER BENING</h1>
-      <p class="animate__animated animate__fadeInLeft" id="slider-description">Menyediakan berbagai macam air minum dalam kemasan dan galon, serta pelayanan pengiriman</p>
-      <a href="#Produk"><button class="cta-button animate__animated animate__fadeInLeft">BELI SEKARANG</button></a>
+      <h1 class="animate__animated animate__fadeInLeft" id="slider-title" style="animation-delay: 5s;">Depot Air Minum & Isi Ulang SUMBER BENING</h1>
+      <p class="animate__animated animate__fadeInLeft" id="slider-description" style="animation-delay: 5s;">Menyediakan berbagai macam air minum dalam kemasan dan galon, serta pelayanan pengiriman</p>
+      <a href="#Produk"><button class="cta-button animate__animated animate__fadeInLeft" style="animation-delay: 5s;">BELI SEKARANG</button></a>
     </div>
-    <div class="product-image-container animate__animated animate__fadeInBottomRight">
+    <div class="product-image-container animate__animated animate__fadeInBottomRight" style="animation-delay: 5s;">
       <img class="product-image" src="img/20240824_102837.png" alt="Product Image" />
     </div>
   </div>
@@ -113,5 +114,12 @@ function opennav() {
   document.getElementById('sideNav').classList.toggle('open');
 }
 new WOW().init();
+
+// Tambahkan skrip ini untuk menyembunyikan loader setelah 5 detik
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    document.getElementById('loader-container').style.display = 'none';
+  }, 5000);
+});
 </script>
 </html>
