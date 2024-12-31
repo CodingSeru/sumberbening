@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body style="overflow-x: hidden;">
-  <div class="container-load" id="loader-container"><div class="loader"></div></div>
   <nav class="NavigationBar" id="Rumah">
     <div class="Logo">SUMBER BENING</div>
     <button class="fa-solid fa-bars" id="nav-bar" onclick="opennav()"></button>
@@ -78,11 +77,6 @@ function opennav() {
 new WOW().init();
 
 // Tambahkan skrip ini untuk menyembunyikan loader setelah 5 detik
-window.addEventListener('load', function() {
-  setTimeout(function() {
-    document.getElementById('loader-container').style.display = 'none';
-  }, 3000);
-});
     </script>
 </body>
 </html>
